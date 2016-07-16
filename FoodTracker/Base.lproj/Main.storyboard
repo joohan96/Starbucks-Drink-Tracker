@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lj3-U6-OFn">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Your Drinks-->
+        <scene sceneID="5sF-XV-nWp">
+            <objects>
+                <tableViewController id="oD0-Dp-tme" customClass="DrinkTableViewController" customModule="StarbucksDrinkTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="RJm-2F-3hC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DrinkTableViewCell" rowHeight="90" id="bId-yD-GZH" customClass="DrinkTableViewCell" customModule="StarbucksDrinkTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bId-yD-GZH" id="c56-Ln-6De">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="soU-0Q-nhB">
+                                            <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+                                        </imageView>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2w-1H-yyI" customClass="RatingControl" customModule="StarbucksDrinkTracker" customModuleProvider="target">
+                                            <rect key="frame" x="97" y="37" width="240" height="44"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3g-JC-lXF">
+                                            <rect key="frame" x="97" y="8" width="495" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="h3g-JC-lXF" id="dex-Sn-WsI"/>
+                                    <outlet property="photoImageView" destination="soU-0Q-nhB" id="2UP-vb-JfW"/>
+                                    <outlet property="ratingControl" destination="q2w-1H-yyI" id="YGd-Ed-Bs3"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="lfF-lb-YFK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oD0-Dp-tme" id="OXL-hk-FWi"/>
+                            <outlet property="delegate" destination="oD0-Dp-tme" id="Aee-YR-yzx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Your Drinks" id="tfK-9i-yXK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="99c-Af-iEy">
+                            <connections>
+                                <segue destination="Www-aH-YgM" kind="presentation" identifier="AddItem" id="E2U-6h-vl8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVF-U8-EOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="112"/>
+        </scene>
+        <!--New Drink-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DrinkViewController" customModule="StarbucksDrinkTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +74,113 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7Tz-lZ-2sn">
+                                <rect key="frame" x="20" y="81" width="560" height="418"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Drink Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFI-Og-xSx">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="TBg-kP-oDH">
+                                        <rect key="frame" x="120" y="42" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TBg-kP-oDH" secondAttribute="height" multiplier="1:1" id="mV5-Y8-qYw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="BH6-rw-Fij" appends="YES" id="ihY-Qt-DqL"/>
+                                        </connections>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="78Y-3R-s3H" customClass="RatingControl" customModule="StarbucksDrinkTracker" customModuleProvider="target">
+                                        <rect key="frame" x="160" y="374" width="240" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SFI-Og-xSx" secondAttribute="trailing" id="cof-wP-xDN"/>
+                                    <constraint firstItem="SFI-Og-xSx" firstAttribute="leading" secondItem="7Tz-lZ-2sn" secondAttribute="leading" id="d8K-ja-Nxi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Tz-lZ-2sn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="1DG-1A-wYr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Tz-lZ-2sn" secondAttribute="trailing" id="EiQ-Gv-sdt"/>
+                            <constraint firstItem="7Tz-lZ-2sn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xkk-B5-Ud8"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="New Drink" id="mKc-Ax-5ZS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Sd9-vl-v6u">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="YSW-qT-3cE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="SL4-KD-oiF">
+                            <connections>
+                                <segue destination="2Ei-MB-y6w" kind="unwind" unwindAction="unwindToDrinkList:" id="gem-gm-jST"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="SFI-Og-xSx" id="ZXJ-qA-f6a"/>
+                        <outlet property="photoImageView" destination="TBg-kP-oDH" id="zEe-nu-17r"/>
+                        <outlet property="ratingControl" destination="78Y-3R-s3H" id="AV5-2z-GB1"/>
+                        <outlet property="saveButton" destination="SL4-KD-oiF" id="zbY-tr-epE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="2Ei-MB-y6w" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="BH6-rw-Fij">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="nDk-Ha-I7m"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1763" y="112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cmg-vV-ELR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lj3-U6-OFn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S6w-50-4sK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oD0-Dp-tme" kind="relationship" relationship="rootViewController" id="fNO-bV-Uc7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bF-LW-KBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mEB-OY-Eyj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Www-aH-YgM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3jo-78-COY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q3N-gn-5Li"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iE3-Up-iSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="275" height="275"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lfF-lb-YFK"/>
+    </inferredMetricsTieBreakers>
 </document>

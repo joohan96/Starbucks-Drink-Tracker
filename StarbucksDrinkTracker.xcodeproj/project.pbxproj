@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F8DAE621C867E95009629E1 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DAE611C867E95009629E1 /* Drink.swift */; };
+		7F8DAE631C867E95009629E1 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DAE611C867E95009629E1 /* Drink.swift */; };
+		7F8DAE651C868440009629E1 /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DAE641C868440009629E1 /* DrinkTableViewCell.swift */; };
+		7F8DAE661C868440009629E1 /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DAE641C868440009629E1 /* DrinkTableViewCell.swift */; };
+		7FBF1BC51C71D77100DA9F1A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBF1BC41C71D77100DA9F1A /* RatingControl.swift */; };
 		7FC3BE581C700174005ACB76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3BE571C700174005ACB76 /* AppDelegate.swift */; };
-		7FC3BE5A1C700174005ACB76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3BE591C700174005ACB76 /* ViewController.swift */; };
+		7FC3BE5A1C700174005ACB76 /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3BE591C700174005ACB76 /* DrinkViewController.swift */; };
 		7FC3BE5D1C700174005ACB76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC3BE5B1C700174005ACB76 /* Main.storyboard */; };
 		7FC3BE5F1C700175005ACB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC3BE5E1C700175005ACB76 /* Assets.xcassets */; };
 		7FC3BE621C700175005ACB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC3BE601C700175005ACB76 /* LaunchScreen.storyboard */; };
-		7FC3BE6D1C70017B005ACB76 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3BE6C1C70017B005ACB76 /* FoodTrackerTests.swift */; };
+		7FC3BE6D1C70017B005ACB76 /* StarbucksDrinkTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3BE6C1C70017B005ACB76 /* StarbucksDrinkTrackerTests.swift */; };
+		7FCA6CC31C86C50A00400851 /* DrinkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6CC21C86C50A00400851 /* DrinkTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +32,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7FC3BE541C700173005ACB76 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F8DAE611C867E95009629E1 /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		7F8DAE641C868440009629E1 /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
+		7FBF1BC41C71D77100DA9F1A /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		7FC3BE541C700173005ACB76 /* StarbucksDrinkTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarbucksDrinkTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC3BE571C700174005ACB76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FC3BE591C700174005ACB76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FC3BE591C700174005ACB76 /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 		7FC3BE5C1C700174005ACB76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FC3BE5E1C700175005ACB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FC3BE611C700175005ACB76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FC3BE631C700176005ACB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FC3BE681C70017B005ACB76 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FC3BE6C1C70017B005ACB76 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
+		7FC3BE681C70017B005ACB76 /* StarbucksDrinkTracker.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarbucksDrinkTracker.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC3BE6C1C70017B005ACB76 /* StarbucksDrinkTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksDrinkTrackerTests.swift; sourceTree = "<group>"; };
 		7FC3BE6E1C70017B005ACB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FCA6CC21C86C50A00400851 /* DrinkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +69,8 @@
 		7FC3BE4B1C700171005ACB76 = {
 			isa = PBXGroup;
 			children = (
-				7FC3BE561C700173005ACB76 /* FoodTracker */,
-				7FC3BE6B1C70017B005ACB76 /* FoodTrackerTests */,
+				7FC3BE561C700173005ACB76 /* StarbucksDrinkTracker */,
+				7FC3BE6B1C70017B005ACB76 /* StarbucksDrinkTrackerTests */,
 				7FC3BE551C700173005ACB76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,40 +78,46 @@
 		7FC3BE551C700173005ACB76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FC3BE541C700173005ACB76 /* FoodTracker.app */,
-				7FC3BE681C70017B005ACB76 /* FoodTrackerTests.xctest */,
+				7FC3BE541C700173005ACB76 /* StarbucksDrinkTracker.app */,
+				7FC3BE681C70017B005ACB76 /* StarbucksDrinkTracker.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7FC3BE561C700173005ACB76 /* FoodTracker */ = {
+		7FC3BE561C700173005ACB76 /* StarbucksDrinkTracker */ = {
 			isa = PBXGroup;
 			children = (
 				7FC3BE571C700174005ACB76 /* AppDelegate.swift */,
-				7FC3BE591C700174005ACB76 /* ViewController.swift */,
+				7FC3BE591C700174005ACB76 /* DrinkViewController.swift */,
+				7FBF1BC41C71D77100DA9F1A /* RatingControl.swift */,
 				7FC3BE5B1C700174005ACB76 /* Main.storyboard */,
+				7FCA6CC21C86C50A00400851 /* DrinkTableViewController.swift */,
+				7F8DAE641C868440009629E1 /* DrinkTableViewCell.swift */,
 				7FC3BE5E1C700175005ACB76 /* Assets.xcassets */,
 				7FC3BE601C700175005ACB76 /* LaunchScreen.storyboard */,
+				7F8DAE611C867E95009629E1 /* Drink.swift */,
 				7FC3BE631C700176005ACB76 /* Info.plist */,
 			);
+			name = StarbucksDrinkTracker;
 			path = FoodTracker;
 			sourceTree = "<group>";
 		};
-		7FC3BE6B1C70017B005ACB76 /* FoodTrackerTests */ = {
+		7FC3BE6B1C70017B005ACB76 /* StarbucksDrinkTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				7FC3BE6C1C70017B005ACB76 /* FoodTrackerTests.swift */,
+				7FC3BE6C1C70017B005ACB76 /* StarbucksDrinkTrackerTests.swift */,
 				7FC3BE6E1C70017B005ACB76 /* Info.plist */,
 			);
+			name = StarbucksDrinkTrackerTests;
 			path = FoodTrackerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FC3BE531C700173005ACB76 /* FoodTracker */ = {
+		7FC3BE531C700173005ACB76 /* StarbucksDrinkTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FC3BE711C70017B005ACB76 /* Build configuration list for PBXNativeTarget "FoodTracker" */;
+			buildConfigurationList = 7FC3BE711C70017B005ACB76 /* Build configuration list for PBXNativeTarget "StarbucksDrinkTracker" */;
 			buildPhases = (
 				7FC3BE501C700173005ACB76 /* Sources */,
 				7FC3BE511C700173005ACB76 /* Frameworks */,
@@ -111,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = FoodTracker;
+			name = StarbucksDrinkTracker;
 			productName = FoodTracker;
-			productReference = 7FC3BE541C700173005ACB76 /* FoodTracker.app */;
+			productReference = 7FC3BE541C700173005ACB76 /* StarbucksDrinkTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7FC3BE671C70017B005ACB76 /* FoodTrackerTests */ = {
+		7FC3BE671C70017B005ACB76 /* StarbucksDrinkTrackerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FC3BE741C70017B005ACB76 /* Build configuration list for PBXNativeTarget "FoodTrackerTests" */;
+			buildConfigurationList = 7FC3BE741C70017B005ACB76 /* Build configuration list for PBXNativeTarget "StarbucksDrinkTrackerTests" */;
 			buildPhases = (
 				7FC3BE641C70017B005ACB76 /* Sources */,
 				7FC3BE651C70017B005ACB76 /* Frameworks */,
@@ -129,9 +145,9 @@
 			dependencies = (
 				7FC3BE6A1C70017B005ACB76 /* PBXTargetDependency */,
 			);
-			name = FoodTrackerTests;
+			name = StarbucksDrinkTrackerTests;
 			productName = FoodTrackerTests;
-			productReference = 7FC3BE681C70017B005ACB76 /* FoodTrackerTests.xctest */;
+			productReference = 7FC3BE681C70017B005ACB76 /* StarbucksDrinkTracker.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7FC3BE4F1C700172005ACB76 /* Build configuration list for PBXProject "FoodTracker" */;
+			buildConfigurationList = 7FC3BE4F1C700172005ACB76 /* Build configuration list for PBXProject "StarbucksDrinkTracker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,8 +182,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FC3BE531C700173005ACB76 /* FoodTracker */,
-				7FC3BE671C70017B005ACB76 /* FoodTrackerTests */,
+				7FC3BE531C700173005ACB76 /* StarbucksDrinkTracker */,
+				7FC3BE671C70017B005ACB76 /* StarbucksDrinkTrackerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,8 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FC3BE5A1C700174005ACB76 /* ViewController.swift in Sources */,
+				7FC3BE5A1C700174005ACB76 /* DrinkViewController.swift in Sources */,
+				7FBF1BC51C71D77100DA9F1A /* RatingControl.swift in Sources */,
+				7F8DAE621C867E95009629E1 /* Drink.swift in Sources */,
 				7FC3BE581C700174005ACB76 /* AppDelegate.swift in Sources */,
+				7FCA6CC31C86C50A00400851 /* DrinkTableViewController.swift in Sources */,
+				7F8DAE651C868440009629E1 /* DrinkTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FC3BE6D1C70017B005ACB76 /* FoodTrackerTests.swift in Sources */,
+				7F8DAE631C867E95009629E1 /* Drink.swift in Sources */,
+				7F8DAE661C868440009629E1 /* DrinkTableViewCell.swift in Sources */,
+				7FC3BE6D1C70017B005ACB76 /* StarbucksDrinkTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +237,7 @@
 /* Begin PBXTargetDependency section */
 		7FC3BE6A1C70017B005ACB76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7FC3BE531C700173005ACB76 /* FoodTracker */;
+			target = 7FC3BE531C700173005ACB76 /* StarbucksDrinkTracker */;
 			targetProxy = 7FC3BE691C70017B005ACB76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -329,8 +351,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.StarbucksDrinkTracker;
+				PRODUCT_NAME = StarbucksDrinkTracker;
 			};
 			name = Debug;
 		};
@@ -340,8 +362,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.StarbucksDrinkTracker;
+				PRODUCT_NAME = StarbucksDrinkTracker;
 			};
 			name = Release;
 		};
@@ -352,8 +374,8 @@
 				INFOPLIST_FILE = FoodTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodTracker.app/FoodTracker";
+				PRODUCT_NAME = StarbucksDrinkTracker;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarbucksDrinkTracker.app/StarbucksDrinkTracker";
 			};
 			name = Debug;
 		};
@@ -364,15 +386,15 @@
 				INFOPLIST_FILE = FoodTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodTracker.app/FoodTracker";
+				PRODUCT_NAME = StarbucksDrinkTracker;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarbucksDrinkTracker.app/StarbucksDrinkTracker";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FC3BE4F1C700172005ACB76 /* Build configuration list for PBXProject "FoodTracker" */ = {
+		7FC3BE4F1C700172005ACB76 /* Build configuration list for PBXProject "StarbucksDrinkTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FC3BE6F1C70017B005ACB76 /* Debug */,
@@ -381,21 +403,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FC3BE711C70017B005ACB76 /* Build configuration list for PBXNativeTarget "FoodTracker" */ = {
+		7FC3BE711C70017B005ACB76 /* Build configuration list for PBXNativeTarget "StarbucksDrinkTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FC3BE721C70017B005ACB76 /* Debug */,
 				7FC3BE731C70017B005ACB76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		7FC3BE741C70017B005ACB76 /* Build configuration list for PBXNativeTarget "FoodTrackerTests" */ = {
+		7FC3BE741C70017B005ACB76 /* Build configuration list for PBXNativeTarget "StarbucksDrinkTrackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FC3BE751C70017B005ACB76 /* Debug */,
 				7FC3BE761C70017B005ACB76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
