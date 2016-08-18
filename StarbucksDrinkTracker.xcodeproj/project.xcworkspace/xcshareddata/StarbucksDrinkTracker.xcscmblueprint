@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ECE1597E040B522BD0BB26CF7E38C05C4F0AD87D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ECE1597E040B522BD0BB26CF7E38C05C4F0AD87D" : 0,
+    "6AA3B78149B0F91AB323D98F42A27ACD3DF873E5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "42D5534E-678C-424F-8986-BF292BFCBFF5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ECE1597E040B522BD0BB26CF7E38C05C4F0AD87D" : "StarbucksDrinkTracker\/",
+    "6AA3B78149B0F91AB323D98F42A27ACD3DF873E5" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "StarbucksDrinkTracker",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "StarbucksDrinkTracker.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joohan96",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6AA3B78149B0F91AB323D98F42A27ACD3DF873E5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joohan96",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ECE1597E040B522BD0BB26CF7E38C05C4F0AD87D"
+    }
+  ]
+}
